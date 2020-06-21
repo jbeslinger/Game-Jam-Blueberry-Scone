@@ -50,14 +50,17 @@ public class PlayerBehavior : MonoBehaviour
         {
             case "C. Key":
                 m_CyanKeyCollected = true;
+                GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "M. Key":
                 m_MagentaKeyCollected = true;
+                GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "Y. Key":
                 m_YellowKeyCollected = true;
+                GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "Keyhole":
@@ -91,10 +94,9 @@ public class PlayerBehavior : MonoBehaviour
 
     private void OpenGoalDoor()
     {
-        Debug.Log("Not enough keys");
         if (m_CyanKeyCollected && m_MagentaKeyCollected && m_YellowKeyCollected)
         {
-            Debug.Log("Opened the door!");
+            GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
             //TODO: Turn on the guide arrow
             m_CyanKeyCollected = false; m_MagentaKeyCollected = false; m_YellowKeyCollected = false;
             GameObject.FindGameObjectWithTag("Keyhole").GetComponent<KeyholeBehavior>().DepositKeys();

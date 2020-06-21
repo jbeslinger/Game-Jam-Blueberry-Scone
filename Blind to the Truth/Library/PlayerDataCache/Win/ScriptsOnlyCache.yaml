@@ -4,6 +4,8 @@ ScriptsOnlyBuild:
     - UnityEngine.RuleTile
     Assembly-CSharp.dll:
     - CellBehavior
+    - KeyholeBehavior
+    - MonsterBehavior
     - PlayerBehavior
     - ResolutionSwapTest
     - VisibilityMaskBehavior
@@ -65,9 +67,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 12686}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12688}
+    - Class: 114
+      Script: {instanceID: 12982}
+    - Class: 114
+      Script: {instanceID: 15118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -100,6 +106,27 @@ ScriptsOnlyBuild:
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/Game Over Scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 12982}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -284,6 +311,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeyholeBehavior
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -656,10 +689,17 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MonsterBehavior
   platform: 5
   scenePathNames:
   - Assets/Scenes/!Test Scene.unity
   - Assets/Scenes/Title Scene.unity
   - Assets/Scenes/Maze Scene.unity
   - Assets/Scenes/End Scene.unity
+  - Assets/Scenes/Game Over Scene.unity
   playerPath: C:/Users/jbeslinger/Downloads/Blind to the Truth.exe

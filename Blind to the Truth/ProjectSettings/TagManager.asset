@@ -12,6 +12,7 @@ TagManager:
   - Decoy
   - Key Spawn
   - Keyhole
+  - Monster
   layers:
   - Default
   - TransparentFX
