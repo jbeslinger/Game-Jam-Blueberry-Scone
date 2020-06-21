@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class MonsterBehavior : MonoBehaviour
 {
     #region Fields
-    public Transform target = null;
+    public Transform myTarget = null;
 
     private float m_MovementSpeed = 5f / 1000;
     private int m_MonsterPhase = 0;
@@ -28,21 +28,19 @@ public class MonsterBehavior : MonoBehaviour
 
     public void UpdateTarget(Transform t)
     {
-        if (target == null)
-            target = t;
-        else if (target.name == "Decoy")
-            return;
+        if (GameObject.FindGameObjectWithTag("Decoy") != null)
+            myTarget = GameObject.FindGameObjectWithTag("Decoy").transform;
         else
-            target = t;
+            myTarget = t;
 
     }
 
     private void FollowTarget()
     {
-        if (target == null)
+        if (myTarget == null)
             return;
 
-        transform.position = Vector2.MoveTowards(transform.position, target.position, m_MovementSpeed);
+        transform.position = Vector2.MoveTowards(transform.position, myTarget.position, m_MovementSpeed);
     }
 
     public void NextPhase()

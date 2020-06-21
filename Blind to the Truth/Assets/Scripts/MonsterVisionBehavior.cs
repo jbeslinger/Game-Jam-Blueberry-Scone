@@ -6,7 +6,7 @@ public class MonsterVisionBehavior : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            transform.parent.GetComponent<MonsterBehavior>().UpdateTarget(collision.transform);
+            transform.parent.GetComponent<MonsterBehavior>().myTarget = collision.transform;
         }
     }
 }

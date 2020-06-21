@@ -153,7 +153,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1466912633
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f7308f429de81a14fb55e5c69986b738, type: 3}
   m_Color: {r: 0, g: 1, b: 0, a: 1}
@@ -227,6 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibilityCirclePrefab: {fileID: 4938891320867530976, guid: e77fe2036191adb468a870c0a41fc519,
     type: 3}
+  decoyPrefab: {fileID: 1830757006125178256, guid: 74a20e859e1bbd04f878c5077d656881,
+    type: 3}
   circleVisualizer: {fileID: 8016114741554637327}
 --- !u!1 &7895702554416819536
 GameObject:
@@ -296,7 +298,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1466912633
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cd6bedb37d55bce489671d93199cefb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}

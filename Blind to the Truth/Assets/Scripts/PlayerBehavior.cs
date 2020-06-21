@@ -4,12 +4,14 @@
 public class PlayerBehavior : MonoBehaviour
 {
     #region Fields
-    public GameObject visibilityCirclePrefab;
+    public GameObject visibilityCirclePrefab, decoyPrefab;
     public Transform circleVisualizer;
 
     private Rigidbody2D m_MyRigidbody2D;
     private float m_MovementSpeed = 12f;
     private float m_MaxCircleSize = 1.5f;
+
+    private int m_NumberOfDecoys = 3;
 
     private bool m_CyanKeyCollected = false, m_MagentaKeyCollected = false, m_YellowKeyCollected = false;
     #endregion
@@ -34,6 +36,12 @@ public class PlayerBehavior : MonoBehaviour
         {
             SpawnEcholocationCircle(m_CircleScale);
             m_CircleScale = 0f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) &&
+            GameObject.FindGameObjectWithTag("Decoy") == null && m_NumberOfDecoys > 0)
+        {
+            SpawnDecoy();
         }
 
         circleVisualizer.localScale = new Vector3(m_CircleScale, m_CircleScale, 1);
@@ -90,6 +98,15 @@ public class PlayerBehavior : MonoBehaviour
         //TODO: Play the echolocation noise
         GameObject echo = Instantiate(visibilityCirclePrefab, transform.position, Quaternion.identity);
         echo.transform.localScale = new Vector3(scale, scale, 1f);
+        NotifyMonster(transform);
+    }
+
+    private void SpawnDecoy()
+    {
+        m_NumberOfDecoys--;
+        GameObject decoy = Instantiate(decoyPrefab);
+        decoy.transform.position = transform.position;
+        NotifyMonster(decoy.transform);
     }
 
     private void OpenGoalDoor()
@@ -102,6 +119,11 @@ public class PlayerBehavior : MonoBehaviour
             GameObject.FindGameObjectWithTag("Keyhole").GetComponent<KeyholeBehavior>().DepositKeys();
             GameObject.FindGameObjectWithTag("Goal Door").SetActive(false);
         }
+    }
+
+    private void NotifyMonster(Transform t)
+    {
+        GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().UpdateTarget(t);
     }
     #endregion
 }
