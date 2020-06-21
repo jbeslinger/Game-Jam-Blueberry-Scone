@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6276526881169902079}
   - component: {fileID: 8452838918602467953}
+  - component: {fileID: 7056496242578811379}
   m_Layer: 0
   m_Name: '!Trigger'
   m_TagString: Cell Trigger
@@ -57,3 +58,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 34}
   m_EdgeRadius: 0
+--- !u!114 &7056496242578811379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055002079537686973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968ca4da7a13c5e4aad9efa43053ac03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
