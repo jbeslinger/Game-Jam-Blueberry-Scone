@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp-Editor.dll:
     - UnityEngine.RuleTile
     Assembly-CSharp.dll:
+    - CellBehavior
     - PlayerBehavior
     - ResolutionSwapTest
     - VisibilityMaskBehavior
@@ -58,13 +59,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 586}
     - Class: 114
-      Script: {instanceID: 11702}
+      Script: {instanceID: 11384}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11704}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 12686}
+    - Class: 114
+      Script: {instanceID: 12980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -173,6 +176,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: f196dec94e3128400c21354c6adb1287
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CellBehavior
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -503,6 +512,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: d888a00c2c96a468283c15f23c57be74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BitwiseExercise
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3

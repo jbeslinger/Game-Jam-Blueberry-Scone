@@ -69,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1466912633
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5b9a66187c2b15e479d8ae5ffb9f4bcf, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 1}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 8099300959281271892}
   m_Layer: 0
   m_Name: Y. Key
-  m_TagString: M. Key
+  m_TagString: Y. Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

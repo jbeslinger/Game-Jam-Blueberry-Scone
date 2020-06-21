@@ -10,6 +10,8 @@ public class PlayerBehavior : MonoBehaviour
     private Rigidbody2D m_MyRigidbody2D;
     private float m_MovementSpeed = 12f;
     private float m_MaxCircleSize = 1.5f;
+
+    private bool m_CyanKeyCollected = false, m_MagentaKeyCollected = false, m_YellowKeyCollected = false;
     #endregion
 
     #region Methods
@@ -27,8 +29,6 @@ public class PlayerBehavior : MonoBehaviour
                 m_CircleScale += Time.deltaTime * 3f;
             else
                 m_CircleScale = m_MaxCircleSize;
-            
-            //TODO: Play Echolocation fillup sound on loop
         }
         else if (Input.GetKeyUp(KeyCode.Z))
         {
@@ -42,6 +42,28 @@ public class PlayerBehavior : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.transform.tag)
+        {
+            case "C. Key":
+                m_CyanKeyCollected = true;
+                Destroy(collision.gameObject);
+                break;
+            case "M. Key":
+                m_MagentaKeyCollected = true;
+                Destroy(collision.gameObject);
+                break;
+            case "Y. Key":
+                m_YellowKeyCollected = true;
+                Destroy(collision.gameObject);
+                break;
+            case "Keyhole":
+                OpenGoalDoor();
+                break;
+        }
     }
 
     private void MovePlayer()
@@ -65,6 +87,19 @@ public class PlayerBehavior : MonoBehaviour
         //TODO: Play the echolocation noise
         GameObject echo = Instantiate(visibilityCirclePrefab, transform.position, Quaternion.identity);
         echo.transform.localScale = new Vector3(scale, scale, 1f);
+    }
+
+    private void OpenGoalDoor()
+    {
+        Debug.Log("Not enough keys");
+        if (m_CyanKeyCollected && m_MagentaKeyCollected && m_YellowKeyCollected)
+        {
+            Debug.Log("Opened the door!");
+            //TODO: Turn on the guide arrow
+            m_CyanKeyCollected = false; m_MagentaKeyCollected = false; m_YellowKeyCollected = false;
+            GameObject.FindGameObjectWithTag("Keyhole").GetComponent<KeyholeBehavior>().DepositKeys();
+            GameObject.FindGameObjectWithTag("Goal Door").SetActive(false);
+        }
     }
     #endregion
 }

@@ -7,6 +7,11 @@ TagManager:
   - C. Key
   - M. Key
   - Y. Key
+  - Cell Trigger
+  - Goal Door
+  - Decoy
+  - Key Spawn
+  - Keyhole
   layers:
   - Default
   - TransparentFX
@@ -44,12 +49,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Monster
-    uniqueID: 1528056857
-    locked: 0
   - name: Background
     uniqueID: 3102937161
     locked: 0
   - name: Player
     uniqueID: 1466912633
+    locked: 0
+  - name: Monster
+    uniqueID: 1528056857
     locked: 0

@@ -11,6 +11,18 @@ TextureImporter:
   - first:
       213: -1788547550715777980
     second: Decoration Tiles_2
+  - first:
+      213: -3836169112025255629
+    second: Decoration Tiles_0
+  - first:
+      213: -151674392131280198
+    second: Decoration Tiles_1
+  - first:
+      213: -609708109308690809
+    second: Decoration Tiles_2
+  - first:
+      213: -665605097628621292
+    second: Decoration Tiles_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,8 +122,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9ee559e475644a00800000000000000
-      internalID: 739827791600938655
+      spriteID: 331b86b748033cac0800000000000000
+      internalID: -3836169112025255629
       vertices: []
       indices: 
       edges: []
@@ -131,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e4b816984ccde250800000000000000
-      internalID: 5975656892718429416
+      spriteID: ab2ed77a1f425edf0800000000000000
+      internalID: -151674392131280198
       vertices: []
       indices: 
       edges: []
@@ -152,8 +164,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44ce0bf8a7dcd27e0800000000000000
-      internalID: -1788547550715777980
+      spriteID: 78efaf774b1e987f0800000000000000
+      internalID: -609708109308690809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decoration Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4162823b0bb43c6f0800000000000000
+      internalID: -665605097628621292
       vertices: []
       indices: 
       edges: []
