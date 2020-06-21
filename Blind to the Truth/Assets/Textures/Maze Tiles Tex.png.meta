@@ -50,6 +50,90 @@ TextureImporter:
   - first:
       213: -1444594945543338581
     second: Maze Tiles Tex_15
+  - first:
+      213: -1863367437741075164
+    second: Maze Tiles Tex_0
+  - first:
+      213: -9013899757739745052
+    second: Maze Tiles Tex_1
+  - first:
+      213: -4149908518032800228
+    second: Maze Tiles Tex_2
+  - first:
+      213: 3324259484020678745
+    second: Maze Tiles Tex_3
+  - first:
+      213: -3876733734366159860
+    second: Maze Tiles Tex_4
+  - first:
+      213: -3770271424963626161
+    second: Maze Tiles Tex_5
+  - first:
+      213: -2144569080075148077
+    second: Maze Tiles Tex_6
+  - first:
+      213: -5904196205255829113
+    second: Maze Tiles Tex_16
+  - first:
+      213: -4423787748941866778
+    second: Maze Tiles Tex_17
+  - first:
+      213: 9165198610231617010
+    second: Maze Tiles Tex_18
+  - first:
+      213: 759210986422876913
+    second: Maze Tiles Tex_19
+  - first:
+      213: 139379578971717508
+    second: Maze Tiles Tex_7
+  - first:
+      213: -5216473331077769428
+    second: Maze Tiles Tex_8
+  - first:
+      213: -3073955568692751278
+    second: Maze Tiles Tex_9
+  - first:
+      213: -2658194703486170431
+    second: Maze Tiles Tex_10
+  - first:
+      213: 4239645577574466394
+    second: Maze Tiles Tex_11
+  - first:
+      213: -706363723518452651
+    second: Maze Tiles Tex_12
+  - first:
+      213: 4489668773074977097
+    second: Maze Tiles Tex_13
+  - first:
+      213: 8276218040418477739
+    second: Maze Tiles Tex_14
+  - first:
+      213: -1544087291114785826
+    second: Maze Tiles Tex_15
+  - first:
+      213: 7404008913865040959
+    second: Maze Tiles Tex_16
+  - first:
+      213: -5950991083701699584
+    second: Maze Tiles Tex_17
+  - first:
+      213: -1558597130595809153
+    second: Maze Tiles Tex_18
+  - first:
+      213: 1621697813435985595
+    second: Maze Tiles Tex_19
+  - first:
+      213: -2226749389411075315
+    second: Maze Tiles Tex_20
+  - first:
+      213: -6778884992660833395
+    second: Maze Tiles Tex_21
+  - first:
+      213: -1800467987880496938
+    second: Maze Tiles Tex_22
+  - first:
+      213: -2702131797782944302
+    second: Maze Tiles Tex_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,6 +223,426 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425d96b103df326e0800000000000000
+      internalID: -1863367437741075164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e061f29de138e280800000000000000
+      internalID: -9013899757739745052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c168944a0309866c0800000000000000
+      internalID: -4149908518032800228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950a6465364222e20800000000000000
+      internalID: 3324259484020678745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cd45a5533133ac0800000000000000
+      internalID: -3876733734366159860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bbc306d1e4dabc0800000000000000
+      internalID: -3770271424963626161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4a5d9b8c5fc32e0800000000000000
+      internalID: -2144569080075148077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f7d851dfc2fe100800000000000000
+      internalID: 139379578971717508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c279fc8b42d5b97b0800000000000000
+      internalID: -5216473331077769428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2541cb062bd1755d0800000000000000
+      internalID: -3073955568692751278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac1ea30023c1bd0800000000000000
+      internalID: -2658194703486170431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53c1e0b03f36da30800000000000000
+      internalID: 4239645577574466394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cd5799fed7236f0800000000000000
+      internalID: -706363723518452651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9414c4a36f18e4e30800000000000000
+      internalID: 4489668773074977097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6a2de55780bd270800000000000000
+      internalID: 8276218040418477739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed378e62acc429ae0800000000000000
+      internalID: -1544087291114785826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3460c801e250c660800000000000000
+      internalID: 7404008913865040959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c717a9325d96da0800000000000000
+      internalID: -5950991083701699584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78c4e2ea20ce5ae0800000000000000
+      internalID: -1558597130595809153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe21e6b19d618610800000000000000
+      internalID: 1621697813435985595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze Tiles Tex_20
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 8
         height: 8
@@ -149,14 +653,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e6ebcd0f7d795f40800000000000000
-      internalID: 5717739186569340645
+      spriteID: d0bb5586a3ff811e0800000000000000
+      internalID: -2226749389411075315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maze Tiles Tex_1
+      name: Maze Tiles Tex_21
       rect:
         serializedVersion: 2
         x: 8
@@ -170,14 +674,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f7af1a83927cfa0800000000000000
-      internalID: -5780606273494286497
+      spriteID: d8b7937e3009ce1a0800000000000000
+      internalID: -6778884992660833395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maze Tiles Tex_2
+      name: Maze Tiles Tex_22
       rect:
         serializedVersion: 2
         x: 16
@@ -191,14 +695,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f936426b8edd1e0800000000000000
-      internalID: -2171323576330510578
+      spriteID: 6d0bbe087e37307e0800000000000000
+      internalID: -1800467987880496938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maze Tiles Tex_3
+      name: Maze Tiles Tex_23
       rect:
         serializedVersion: 2
         x: 24
@@ -212,260 +716,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccf11291bb753bc80800000000000000
-      internalID: -8308200426476331060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bbfc95caa2fcbc00800000000000000
-      internalID: 917875239350500280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_5
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d7067bb11542e210800000000000000
-      internalID: 1360725979881146329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_6
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce089667198edd580800000000000000
-      internalID: -8800622385357553428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_7
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e1e04100dc687440800000000000000
-      internalID: 4933813032414405096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e43d9c7ff7fbfc60800000000000000
-      internalID: 7853143051929990373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_9
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a8fe6d0308918160800000000000000
-      internalID: 7026064032552384677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_10
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfe62679723ce79d0800000000000000
-      internalID: -2774565745602695428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_11
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b70ca0f2e02b373c0800000000000000
-      internalID: -4362947840003358597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_12
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58c99c35a71d6ba80800000000000000
-      internalID: -8451337327392220027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_13
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c931a164d24190a60800000000000000
-      internalID: 7640660427492955036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_14
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58456f1f612f112f0800000000000000
-      internalID: -1003755061564255099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maze Tiles Tex_15
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba580920d84c3fbe0800000000000000
-      internalID: -1444594945543338581
+      spriteID: 2d52cd84279108ad0800000000000000
+      internalID: -2702131797782944302
       vertices: []
       indices: 
       edges: []
