@@ -4,6 +4,8 @@
 public class PlayerBehavior : MonoBehaviour
 {
     #region Fields
+    public GameObject visibilityCirclePrefab;
+
     private Rigidbody2D m_MyRigidbody2D;
     private float m_Speed = 12f;
     #endregion
@@ -12,6 +14,12 @@ public class PlayerBehavior : MonoBehaviour
     private void Awake()
     {
         m_MyRigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+            SpawnEcholocationCircle();
     }
 
     private void FixedUpdate()
@@ -33,6 +41,12 @@ public class PlayerBehavior : MonoBehaviour
             x = 1.0f * m_Speed;
 
         m_MyRigidbody2D.velocity = new Vector2(x, y);
+    }
+
+    private void SpawnEcholocationCircle()
+    {
+        GameObject echo = Instantiate(visibilityCirclePrefab, transform.position, Quaternion.identity);
+        echo.transform.localScale = new Vector3(2f, 2f, 1f);
     }
     #endregion
 }
