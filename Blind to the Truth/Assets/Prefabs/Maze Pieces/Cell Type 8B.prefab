@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 1801546030}
   - component: {fileID: 1374405727566422431}
   m_Layer: 0
-  m_Name: Empty Cell
+  m_Name: Cell Type 8B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,9 +323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958d0841800681c4199d462e884fc508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myExits: -1
-  numberOfExits: 4
-  isStart: 1
+  myExits: 8
+  numberOfExits: 1
+  isStart: 0
   isGoal: 0
   keySpawnPoint: {fileID: 7228355335866283747}
 --- !u!1 &1807624508862137800
@@ -3357,7 +3357,7 @@ GameObject:
   m_Layer: 0
   m_Name: KeySpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

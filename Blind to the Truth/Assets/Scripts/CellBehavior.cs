@@ -4,7 +4,7 @@ using UnityEngine;
 public class CellBehavior : MonoBehaviour
 {
     #region Enums
-    [Flags] public enum Exits { NONE = 0, NORTH = 1, WEST = 2, SOUTH = 4, EAST = 8 }
+    [Flags] public enum Exits { NONE = 0, NORTH = 1, EAST = 2, SOUTH = 4, WEST = 8 }
     #endregion
 
     #region Fields
