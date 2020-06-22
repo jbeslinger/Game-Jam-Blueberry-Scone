@@ -3,7 +3,7 @@
 public class VisibilityMaskBehavior : MonoBehaviour
 {
     #region Fields
-    private float m_ShrinkDelay = 1f;
+    private float m_ShrinkDelay = 2.5f;
     private float m_ShrinkSpeed = 1f;
     private float m_TimeElapsed = 0f;
     #endregion
