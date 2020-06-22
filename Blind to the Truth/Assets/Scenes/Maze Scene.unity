@@ -121,6 +121,84 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &669168789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669168790}
+  - component: {fileID: 669168791}
+  m_Layer: 0
+  m_Name: Maze-Random (NOT WORKING)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &669168790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669168789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669168791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669168789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7811762136609f045abecbb658770e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellPrefabs:
+  - {fileID: 1807624507555663341, guid: 84d07cc6e662d2b4cb74d6b4842f395d, type: 3}
+  - {fileID: 1807624507555663341, guid: 97ccc2f76a580b8438192b5eb0502e6b, type: 3}
+  - {fileID: 1807624507555663341, guid: 1638538d07154ce408e0319d11a9f06c, type: 3}
+  - {fileID: 1807624507555663341, guid: ce347ed68fafbc14aaba35da3f5e1226, type: 3}
+  - {fileID: 1807624507555663341, guid: 40e6d60712422564ab0887c6e894b9da, type: 3}
+  - {fileID: 1807624507555663341, guid: 35dba00a8bf236742af5cf41c6ad910e, type: 3}
+  - {fileID: 1807624507555663341, guid: 6dd6deb38267e2648a63684bd81f76ea, type: 3}
+  - {fileID: 1807624507555663341, guid: 1f46bb986a3000a4c8c50cd74b1ca638, type: 3}
+  - {fileID: 1807624507555663341, guid: 9ba131ab6d444fb4f955fcc1ed901819, type: 3}
+  - {fileID: 1807624507555663341, guid: e72004805045b674aa6f00d3407eb7dc, type: 3}
+  - {fileID: 1807624507555663341, guid: 76eae513556a4fd49b81271ee966003e, type: 3}
+  - {fileID: 1807624507555663341, guid: a93d68dcdb3d43f44ba6e0e934e28b60, type: 3}
+  - {fileID: 1807624507555663341, guid: 4fde6ffb28d768849bd285ad21b0ccc7, type: 3}
+  - {fileID: 1807624507555663341, guid: a50a044c688302e46af7c94963ce628f, type: 3}
+  - {fileID: 1807624507555663341, guid: 7632a6c5490598e48b7cba9993a580f5, type: 3}
+  - {fileID: 1807624507555663341, guid: 7632a6c5490598e48b7cba9993a580f5, type: 3}
+  - {fileID: 1807624507555663341, guid: cffcff2e5e3e83a49bc561173e545337, type: 3}
+  - {fileID: 1807624507555663341, guid: 89aa93a18ab5ab841bcfe5684e19cdf2, type: 3}
+  - {fileID: 1807624507555663341, guid: 58bd533e88457ff49856a0a064e98bd6, type: 3}
+  - {fileID: 1807624507555663341, guid: 9594b7c55459efa4bba602271de36760, type: 3}
+  - {fileID: 1807624507555663341, guid: 14bc00f8abad76e45889684164deceac, type: 3}
+  - {fileID: 1807624507555663341, guid: 0fbf47a4ca8963a499a3e574a6705b69, type: 3}
+  - {fileID: 1807624507555663341, guid: 0a3e4774b14ffa749af66263ac73c17d, type: 3}
+  - {fileID: 1807624507555663341, guid: 6e919b1e4724e6645a34327eb47de481, type: 3}
+  - {fileID: 1807624507555663341, guid: 9cc25d35d880e50418ad98a29ee7f646, type: 3}
+  - {fileID: 1807624507555663341, guid: 2adf5d0870f0870438d15ea35328787e, type: 3}
+  - {fileID: 1807624507555663341, guid: 72ebfd3fe2b00a3419c564a89d5bff3e, type: 3}
+  - {fileID: 1807624507555663341, guid: fa0187e5023530f4c8c8f46768114e1d, type: 3}
+  - {fileID: 1807624507555663341, guid: ff5cbf8a75ce9bd47bbdf368cfb8bed9, type: 3}
+  - {fileID: 1807624507555663341, guid: 44134106ab3389c499e07fc977aea7c3, type: 3}
+  startCellPrefab: {fileID: 1807624507555663341, guid: 78e9c11503330c84b9851f9281108815,
+    type: 3}
+  goalCellPrefab: {fileID: 1807624507555663341, guid: aa84168ffc436984aab673a99be31b65,
+    type: 3}
 --- !u!1 &1303238729
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,3 +282,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1446576937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1446576938}
+  - component: {fileID: 1446576939}
+  m_Layer: 0
+  m_Name: Maze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1446576938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446576937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1446576939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446576937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fd503c7939eaa469b5b0986ae6824b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
