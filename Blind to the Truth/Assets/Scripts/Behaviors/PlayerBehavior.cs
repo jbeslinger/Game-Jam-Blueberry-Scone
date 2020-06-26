@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerBehavior : MonoBehaviour
@@ -6,6 +7,7 @@ public class PlayerBehavior : MonoBehaviour
     #region Fields
     public GameObject visibilityCirclePrefab, decoyPrefab;
     public Transform circleVisualizer;
+    public UnityEvent onUpdateUI;
 
     private Rigidbody2D m_MyRigidbody2D;
     private float m_MovementSpeed = 12f;
@@ -58,16 +60,19 @@ public class PlayerBehavior : MonoBehaviour
         {
             case "C. Key":
                 m_CyanKeyCollected = true;
+                UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
                 GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "M. Key":
                 m_MagentaKeyCollected = true;
+                UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
                 GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "Y. Key":
                 m_YellowKeyCollected = true;
+                UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
                 GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
@@ -107,6 +112,7 @@ public class PlayerBehavior : MonoBehaviour
         GameObject decoy = Instantiate(decoyPrefab);
         decoy.transform.position = transform.position;
         NotifyMonster(decoy.transform);
+        UIBehavior.instance.RemoveOneDecoyIcon();
     }
 
     private void OpenGoalDoor()
@@ -116,6 +122,7 @@ public class PlayerBehavior : MonoBehaviour
             GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
             //TODO: Turn on the guide arrow
             m_CyanKeyCollected = false; m_MagentaKeyCollected = false; m_YellowKeyCollected = false;
+            UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
             GameObject.FindGameObjectWithTag("Keyhole").GetComponent<KeyholeBehavior>().DepositKeys();
             GameObject.FindGameObjectWithTag("Goal Door").SetActive(false);
         }

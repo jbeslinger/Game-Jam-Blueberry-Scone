@@ -31,8 +31,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8229547401162168841}
   - {fileID: 1268247993476369636}
+  - {fileID: 8229547401162168841}
   - {fileID: 6363495000785506554}
   - {fileID: 488937746460025685}
   m_Father: {fileID: 0}
@@ -299,10 +299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958d0841800681c4199d462e884fc508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myExits: 7
-  numberOfExits: 3
-  isStart: 0
-  isGoal: 0
   keySpawnPoint: {fileID: 6363495000785506554}
 --- !u!1 &7042490194959848734
 GameObject:
@@ -334,7 +330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1807624507555663339}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &6528929489226902703
 Tilemap:
@@ -19391,7 +19387,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1807624507555663339}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &2248774597537980748
 Tilemap:
