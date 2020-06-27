@@ -40,7 +40,11 @@ public class KeyBehavior : MonoBehaviour
 
     private void OnDestroy()
     {
-        ChangeNeighborCellColors(Mode.ADD);
+        try
+        {
+            ChangeNeighborCellColors(Mode.ADD);
+        }
+        catch { }
     }
 
     /// <summary>
