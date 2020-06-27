@@ -7,7 +7,6 @@ public class PlayerBehavior : MonoBehaviour
     #region Fields
     public GameObject visibilityCirclePrefab, decoyPrefab;
     public Transform circleVisualizer;
-    public UnityEvent onUpdateUI;
 
     private Rigidbody2D m_MyRigidbody2D;
     private float m_MovementSpeed = 12f;
