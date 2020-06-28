@@ -24,7 +24,10 @@ public class ResolutionSwapTest : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.F))
         {
-            Screen.SetResolution(1920, 1080, true);
+            if (Screen.fullScreen)
+                Screen.SetResolution(m_ScreenWidth, mScreenHeight, false);
+            else
+                Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
         }
     }
 }
