@@ -12,6 +12,7 @@ public class KeyholeBehavior : MonoBehaviour
     public void DepositKeys()
     {
         GetComponent<Animator>().SetTrigger("All Keys Collected");
+        myTextBlurb.text = "GET TO EXIT";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

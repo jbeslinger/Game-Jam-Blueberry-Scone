@@ -10,10 +10,8 @@ public class CellBehavior : MonoBehaviour
     #region Methods
     private void Awake()
     {
-        foreach (TilemapRenderer r in GetComponentsInChildren<TilemapRenderer>())
-        {
-            r.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
-        }
+        foreach (TilemapRenderer t in GetComponentsInChildren<TilemapRenderer>())
+            t.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
     }
     #endregion
 }

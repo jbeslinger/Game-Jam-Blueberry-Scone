@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class MonsterBehavior : MonoBehaviour
 {
     #region Fields
     public Transform myTarget = null;
 
+    private AudioSource m_ScaryMusic;
     private float m_MovementSpeed = 0.007f;
     private float m_MovementSpeedMultiplier = 1f;
     private int m_MonsterPhase = 0;
@@ -24,6 +26,11 @@ public class MonsterBehavior : MonoBehaviour
     #endregion
 
     #region Methods
+    private void Awake()
+    {
+        m_ScaryMusic = GetComponent<AudioSource>();
+    }
+
     private void LateUpdate()
     {
         if (!m_Alive)
@@ -33,6 +40,7 @@ public class MonsterBehavior : MonoBehaviour
 
         UpdateSpeedMultiplier();
         FollowTarget();
+        UpdateMusicVolume();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,9 +67,13 @@ public class MonsterBehavior : MonoBehaviour
     private void FollowTarget()
     {
         if (myTarget == null)
-            return;
+            myTarget = GameObject.FindGameObjectWithTag("Player").transform;
 
-        transform.position = Vector2.MoveTowards(transform.position, myTarget.position, m_MovementSpeed * Mathf.Pow(m_MovementSpeedMultiplier, 4));
+        if (myTarget.tag == "Player")
+            transform.position = Vector2.MoveTowards(transform.position, myTarget.position, m_MovementSpeed * Mathf.Pow(m_MovementSpeedMultiplier, 4));
+        else if (myTarget.tag == "Decoy")
+            // Move faster towards a decoy
+            transform.position = Vector2.MoveTowards(transform.position, myTarget.position, (m_MovementSpeed * 16) * Mathf.Pow(m_MovementSpeedMultiplier, 2));
     }
 
     public void NextPhase()
@@ -69,13 +81,18 @@ public class MonsterBehavior : MonoBehaviour
         if (m_MonsterPhase < 4)
         {
             m_Alive = true;
-            TeleportCloseToPlayer();
+            //TeleportCloseToPlayer();
             m_MovementSpeed *= 1.4f;
             m_MonsterPhase++;
         }
     }
 
-    private void TeleportCloseToPlayer()
+    public void Attack()
+    {
+        m_MovementSpeed *= 1.02f;
+    }
+
+    /*private void TeleportCloseToPlayer()
     {
         if (IsVisible)
             return;
@@ -85,6 +102,12 @@ public class MonsterBehavior : MonoBehaviour
         fromDirection.x *= 60f; fromDirection.y *= 34f;
         Vector2 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         transform.position = playerPosition + fromDirection;
+    }*/
+
+    private void UpdateMusicVolume()
+    {
+        if (myTarget.tag == "Player")
+            m_ScaryMusic.volume = 9f / m_DistanceToTarget;
     }
     #endregion
 }
