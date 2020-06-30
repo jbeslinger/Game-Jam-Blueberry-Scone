@@ -98,4 +98,20 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.5
+    functionName: PlaySFXClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 85ff51779a2e11541a3f8e19f6a83666,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.1666666
+    functionName: PlaySFXClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 85ff51779a2e11541a3f8e19f6a83666,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

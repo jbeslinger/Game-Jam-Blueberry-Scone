@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp-Editor.dll:
     - UnityEngine.RuleTile
     Assembly-CSharp.dll:
+    - AnimationSFX
     - CellBehavior
     - CellTriggerBehavior
     - DecoyBehavior
@@ -21,6 +22,7 @@ ScriptsOnlyBuild:
     - ResolutionSwapTest
     - UIBehavior
     - VisibilityMaskBehavior
+    - WhiteNoisePlayerBehavior
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -52,13 +54,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -125,13 +120,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 14294}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 14318}
     - Class: 114
-      Script: {instanceID: 14518}
+      Script: {instanceID: 14520}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,8 +172,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -202,7 +195,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 14318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -299,19 +292,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 13860}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 14292}
-    - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14294}
     - Class: 114
       Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 14412}
+      Script: {instanceID: 14318}
     - Class: 114
-      Script: {instanceID: 14518}
+      Script: {instanceID: 14414}
+    - Class: 114
+      Script: {instanceID: 14520}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -359,6 +352,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -392,13 +389,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 13582}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 14294}
     - Class: 114
-      Script: {instanceID: 14518}
+      Script: {instanceID: 14318}
+    - Class: 114
+      Script: {instanceID: 14520}
+    - Class: 114
+      Script: {instanceID: 15666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -952,6 +953,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WhiteNoisePlayerBehavior
+  - hash:
+      serializedVersion: 2
       Hash: 8001a5f7502aab37e42206da015e6914
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1118,6 +1125,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnimationSFX
   platform: 5
   scenePathNames:
   - Assets/Scenes/Title Scene.unity

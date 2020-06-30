@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(AudioSource))]
 public class PlayerBehavior : MonoBehaviour
 {
     #region Fields
@@ -9,6 +10,7 @@ public class PlayerBehavior : MonoBehaviour
     public Transform circleVisualizer;
 
     private Rigidbody2D m_MyRigidbody2D;
+    private AudioSource m_MyAudioSource;
     private float m_MovementSpeed = 12f;
     private float m_MaxCircleSize = 1.5f;
 
@@ -21,6 +23,7 @@ public class PlayerBehavior : MonoBehaviour
     private void Awake()
     {
         m_MyRigidbody2D = GetComponent<Rigidbody2D>();
+        m_MyAudioSource = GetComponent<AudioSource>();
     }
 
     private float m_CircleScale = 0f;
@@ -59,18 +62,21 @@ public class PlayerBehavior : MonoBehaviour
         {
             case "C. Key":
                 m_CyanKeyCollected = true;
+                PlayKeyCollectSound();
                 UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
                 GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "M. Key":
                 m_MagentaKeyCollected = true;
+                PlayKeyCollectSound();
                 UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
                 GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
                 break;
             case "Y. Key":
                 m_YellowKeyCollected = true;
+                PlayKeyCollectSound();
                 UIBehavior.instance.UpdateUIKeys(m_CyanKeyCollected, m_MagentaKeyCollected, m_YellowKeyCollected);
                 GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().NextPhase();
                 Destroy(collision.gameObject);
@@ -130,6 +136,11 @@ public class PlayerBehavior : MonoBehaviour
     private void NotifyMonster(Transform t)
     {
         GameObject.FindGameObjectWithTag("Monster").GetComponent<MonsterBehavior>().UpdateTarget(t);
+    }
+
+    private void PlayKeyCollectSound()
+    {
+        m_MyAudioSource.PlayOneShot(m_MyAudioSource.clip);
     }
     #endregion
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
+[RequireComponent(typeof(AudioSource))]
 public class KeyBehavior : MonoBehaviour
 {
     #region Enums
