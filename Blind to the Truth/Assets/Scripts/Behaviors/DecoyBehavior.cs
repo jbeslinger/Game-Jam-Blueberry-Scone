@@ -36,8 +36,8 @@ public class DecoyBehavior : MonoBehaviour
 
     private void UpdateVolume()
     {
-        float maxVolume = 0.5f;
-        m_MyAudioSource.volume = 0.5f / (Mathf.Log(Mathf.Clamp(m_DistanceToPlayer, 1f, 30f)) + 1);
+        float maxVolume = 1f;
+        m_MyAudioSource.volume = maxVolume / (Mathf.Log(Mathf.Clamp(m_DistanceToPlayer, 1f, 30f)) + 1);
     }
     #endregion
 }

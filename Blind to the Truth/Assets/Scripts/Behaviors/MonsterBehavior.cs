@@ -73,7 +73,7 @@ public class MonsterBehavior : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, myTarget.position, m_MovementSpeed * Mathf.Pow(m_MovementSpeedMultiplier, 4));
         else if (myTarget.tag == "Decoy")
             // Move faster towards a decoy
-            transform.position = Vector2.MoveTowards(transform.position, myTarget.position, (m_MovementSpeed * 16) * Mathf.Pow(m_MovementSpeedMultiplier, 2));
+            transform.position = Vector2.MoveTowards(transform.position, myTarget.position, (m_MovementSpeed * 8) * Mathf.Pow(m_MovementSpeedMultiplier, 2));
     }
 
     public void NextPhase()
