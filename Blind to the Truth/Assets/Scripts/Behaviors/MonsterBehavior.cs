@@ -1,21 +1,29 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(AudioSource))]
 public class MonsterBehavior : MonoBehaviour
 {
     #region Fields
     public Transform myTarget = null;
+    public AudioSource[] m_ScaryMusic = new AudioSource[4];
 
-    private AudioSource m_ScaryMusic;
     private float m_MovementSpeed = 0.007f;
     private float m_MovementSpeedMultiplier = 1f;
     private int m_MonsterPhase = 0;
     private bool m_Alive = false;
     private float m_DistanceToTarget;
+
+    private Transform m_Player;
+    private float m_DistanceToPlayer;
     #endregion
 
     #region Properties
+    private void Start()
+    {
+        m_Player = GameObject.FindGameObjectWithTag("Player").transform;
+        myTarget = m_Player;
+    }
+
     private bool IsVisible { get {
             Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
             if (viewPos.x >= 0 && viewPos.x <= 1 && viewPos.y >= 0 && viewPos.y <= 1 && viewPos.z > 0)
@@ -26,17 +34,13 @@ public class MonsterBehavior : MonoBehaviour
     #endregion
 
     #region Methods
-    private void Awake()
-    {
-        m_ScaryMusic = GetComponent<AudioSource>();
-    }
-
     private void LateUpdate()
     {
         if (!m_Alive)
             return;
 
         m_DistanceToTarget = Vector2.Distance(transform.position, myTarget.position);
+        m_DistanceToPlayer = Vector2.Distance(transform.position, m_Player.position);
 
         UpdateSpeedMultiplier();
         FollowTarget();
@@ -66,23 +70,30 @@ public class MonsterBehavior : MonoBehaviour
 
     private void FollowTarget()
     {
-        if (myTarget == null)
-            myTarget = GameObject.FindGameObjectWithTag("Player").transform;
+        if (myTarget == null || GameObject.FindGameObjectWithTag("Decoy") == null)
+            myTarget = m_Player;
 
         if (myTarget.tag == "Player")
             transform.position = Vector2.MoveTowards(transform.position, myTarget.position, m_MovementSpeed * Mathf.Pow(m_MovementSpeedMultiplier, 4));
         else if (myTarget.tag == "Decoy")
             // Move faster towards a decoy
-            transform.position = Vector2.MoveTowards(transform.position, myTarget.position, (m_MovementSpeed * 8) * Mathf.Pow(m_MovementSpeedMultiplier, 2));
+            transform.position = Vector2.MoveTowards(transform.position, myTarget.position, (m_MovementSpeed * 3) * Mathf.Pow(m_MovementSpeedMultiplier, 2));
     }
 
     public void NextPhase()
     {
-        if (m_MonsterPhase < 4)
+        if (m_MonsterPhase == 0)
         {
             m_Alive = true;
+            foreach (AudioSource a in m_ScaryMusic)
+                a.Play();
+        }
+
+        if (m_MonsterPhase < 4)
+        {
             //TeleportCloseToPlayer();
             m_MovementSpeed *= 1.4f;
+            m_ScaryMusic[m_MonsterPhase].mute = false;
             m_MonsterPhase++;
         }
     }
@@ -106,8 +117,8 @@ public class MonsterBehavior : MonoBehaviour
 
     private void UpdateMusicVolume()
     {
-        if (myTarget.tag == "Player")
-            m_ScaryMusic.volume = 9f / m_DistanceToTarget;
+        foreach (AudioSource a in m_ScaryMusic)
+            a.volume = 50f / m_DistanceToPlayer;
     }
     #endregion
 }
