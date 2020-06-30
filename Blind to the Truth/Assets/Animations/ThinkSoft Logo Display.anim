@@ -313,7 +313,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5.0833335
+    m_StopTime: 5.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -577,6 +577,14 @@ AnimationClip:
     functionName: PlaySFXClip
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 9d8d4bdec8126db4d85c35049ea5628c,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 5.25
+    functionName: PlaySFXClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 0d3fda181515e8e4d9ac0af723acfb86,
       type: 3}
     floatParameter: 0
     intParameter: 0
