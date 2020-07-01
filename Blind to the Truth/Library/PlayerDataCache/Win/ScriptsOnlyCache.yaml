@@ -89,6 +89,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -113,6 +115,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12316}
     - Class: 114
       Script: {instanceID: 12510}
+    - Class: 114
+      Script: {instanceID: 12818}
     - Class: 114
       Script: {instanceID: 12852}
     - Class: 114
@@ -171,6 +175,8 @@ ScriptsOnlyBuild:
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -1139,4 +1145,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Maze Scene.unity
   - Assets/Scenes/End Scene.unity
   - Assets/Scenes/Game Over Scene.unity
-  playerPath: C:/Users/jbeslinger/Downloads/Blind to the Truth.exe
+  playerPath: C:/Users/jbeslinger/Downloads/Game Jam - Blueberry Scone/Blind to the
+    Truth.exe
